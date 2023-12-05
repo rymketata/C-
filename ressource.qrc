@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="libre.png">C:\Users\User\Downloads\libre.png</file>
+    <file alias="Reserve.png">C:\Users\User\Desktop\Reserve.png</file>
+    <!-- Ajoutez d'autres images ici -->
+</qresource>
+</RCC>
