@@ -44,6 +44,7 @@ void MainWindow::onButtonClicked(int index)
     if (index >= 0 && index < imageLabels.size()) {
         // Changez l'image du label associé (vous devez avoir des images différentes pour chaque état)
         QPixmap pixmap(":/Reserve.png");
+        //imageLabels[index]->setFixedSize(50, 50);
         imageLabels[index]->setPixmap(pixmap.scaled(imageLabels[index]->size(), Qt::KeepAspectRatio));
         qDebug() << "Champ " << index + 1 << " réservé";
     }
@@ -53,7 +54,8 @@ void MainWindow::onCancelButtonClicked(int index)
 {
     if (index >= 0 && index < imageLabels.size()) {
         // Réinitialisez l'image du label associé
-        QPixmap pixmap(":/libre.png");
+        QPixmap pixmap(":/test.png");
+        //imageLabels[index]->setFixedSize(50, 50);
         imageLabels[index]->setPixmap(pixmap.scaled(imageLabels[index]->size(), Qt::KeepAspectRatio));
         qDebug() << "Annulation de la réservation pour le champ " << index + 1;
     }
@@ -62,7 +64,7 @@ void MainWindow::onResetAllClicked()
 {
     // Réinitialisez toutes les images pour les rendre disponibles
     for (QLabel* label : imageLabels) {
-        label->setPixmap(QPixmap(":/../../Downloads/libre.png"));
+        label->setPixmap(QPixmap(":/test.png"));
     }
     qDebug() << "Tous les champs réinitialisés.";
 

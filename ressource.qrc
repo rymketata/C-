@@ -2,6 +2,7 @@
 <qresource>
     <file alias="libre.png">C:\Users\User\Downloads\libre.png</file>
     <file alias="Reserve.png">C:\Users\User\Desktop\Reserve.png</file>
+    <file alias="test.png">C:\Users\User\Downloads\test.png</file>
     <!-- Ajoutez d'autres images ici -->
 </qresource>
 </RCC>
